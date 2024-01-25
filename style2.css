@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+    /* WTF*/
+.intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(images/image1.JPG);
+    display: table;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    position: fixed;
+}

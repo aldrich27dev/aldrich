@@ -93,7 +93,7 @@
      color: #4b4c4d;
  }
 
- @media(max-width:740px) {
+ @media(max-width:768px) {
     .Profilepic{
         height: auto;
         width: auto;

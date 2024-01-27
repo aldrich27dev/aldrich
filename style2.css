@@ -50,9 +50,9 @@ p{
 h5{
     color: black; 
  font-family: 'Raleway',sans-serif;
- font-size: 35px;
+ font-size: 27px;
  white-space: nowrap;
- overflow: inherit;
+ overflow: hidden;
  width: 100%;
  animation: animtext 4s steps(80, end); 
   transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);

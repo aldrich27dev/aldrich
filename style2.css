@@ -96,6 +96,6 @@
  @media(max-width:768px) {
     .Profilepic{
         height: auto;
-        width: auto;
+        width: 400px;
     }
 }

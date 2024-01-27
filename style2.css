@@ -52,7 +52,7 @@ h5{
  font-family: 'Raleway',sans-serif;
  font-size: 35px;
  white-space: nowrap;
- overflow: hidden;
+ overflow: inherit;
  width: 100%;
  animation: animtext 4s steps(80, end); 
   transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
@@ -135,6 +135,6 @@ h5{
 
 @media(max-width:1180px) {
     .container .row{
-        margin-left: 500px;
+        margin-left: 5px;
     }
 }

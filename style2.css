@@ -33,8 +33,13 @@
     height: 500px;
 
 }
+.row{
+    text-align: right;
+    max-width: 500px;
+    margin: 0%;
+}
 
-h3{
+h5{
     color: black; 
  font-family: "arial";
  font-size: 35px;

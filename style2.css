@@ -40,6 +40,13 @@
     font-family: 'Raleway',sans-serif;
 }
 
+p{
+    text-align: middle;
+    max-width: 500px;
+    margin: 0%;
+    font-family: 'Raleway',sans-serif;
+}
+
 h5{
     color: black; 
  font-family: 'Raleway',sans-serif;

@@ -9,32 +9,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Oswald:wght@300&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-<header>    
-     <!-- LOGO ko tangina mo -->
-    <nav class="navbar">
-        <a title="Aldrich Naag" href="https://www.facebook.com/aldrichnaag27"> <img src="images/newlogo.png"  width="80px;"  class="nav-branding"></a>
-            <!-- iba na to -->
-
-        <ul class="nav-menu">
-         <li class="nav-item">
-          <a href="https://www.facebook.com/aldrichnaag27" class="nav-link">HOME</a>
-         </li>
-         <li class="nav-item">
-            <a href="https://www.facebook.com/aldrichnaag27" class="nav-link">PORTFOLIO</a>
-           </li>
-           <li class="nav-item">
-            <a href="https://www.facebook.com/aldrichnaag27" class="nav-link">ABOUT ALDRICH</a>
-           </li>
-        </ul>
-        <div class="hamburger"> 
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <nav class="p-5 bg-stone-950 md:flex fixed w-full md:items-center md:justify-between backdrop-filter backdrop-blur bg-opacity-30">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Raleway] cursor-pointer">
+            <img class="h-10 inline w-auto h-20"
+              src="images/newlogo.png">
+          </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block border rounded">
+            <ion-icon name="reorder-four-outline" onclick="Menu(this)"></ion-icon>
+          </span>
         </div>
-    </nav>
-</header>
+    
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-stone-95 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-4 my-6 md:my-0">
+            
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-amber-300 text-stone-50 duration-500 font-[Raleway]">HOME</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="PORTFOLIO.html" class="text-xl hover:text-amber-300 text-stone-50 duration-500">PORTFOLIO</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="About_Aldrich.html" class="text-xl hover:text-amber-300 text-stone-50 duration-500">ABOUT ALDRICH</a>
+          </li>
+    
+        </ul>
+      </nav>
+
+      <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
+      </script>
+
 <section class="intro">
     <div class="inner">
         <div class="content">
@@ -45,11 +59,10 @@
     </div>
  </section>
  
- <!-- onting java guys -->
-<script src="script.js"></script>
+ <!-- onting java guys --
 
 
-<!-- dito na tayo mga paa -->
+< !-- dito na tayo mga paa -->
 <section class="footer">
     <div class="social">
       <a href="https://www.facebook.com/aldrichnaag27"><i class="fab fa-facebook"></i></a>

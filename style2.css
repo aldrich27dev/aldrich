@@ -7,62 +7,7 @@
 }
 
     /* WTF*/
-.intro{
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    display: table;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-.navbar{
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    position: fixed;
 
-}
-
-.ProfilePic{
-    width: auto;
-    height: 500px;
-    box-shadow: inset 3px 4px 5px rgba(0,0,0,9) #000;
-
-}
-.row .p{
-    text-align: middle;
-    max-width: 500px;
-    margin: 0%;
-    font-family: 'Raleway',sans-serif;
-}
-
-p{
-    text-align: middle;
-    max-width: 500px;
-    margin: 0%;
-    font-family: 'Raleway',sans-serif;
-}
-
-h5{
-    color: black; 
- font-family: 'Raleway',sans-serif;
- font-size: 15px;
- overflow: hidden;
- width: 100%;
- animation: animtext 4s steps(80, end); 
-  transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
-}
-@keyframes animtext { 
- from {
-     width: 0;
-    transition: all 2s ease-in-out;
- } 
-}
 
 
 
@@ -122,19 +67,3 @@ h5{
      padding-bottom: 25px;
      color: #4b4c4d;
  }
-
- @media(max-width:768px) {
-    .Profilepic{
-        height: auto;
-        width: 400px;
-    }
-    .container .row{
-        margin-left: 0%;
-    }
-}
-
-@media(max-width:1180px) {
-    .container .row{
-        margin-left: 5px;
-    }
-}

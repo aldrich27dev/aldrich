@@ -4,38 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Aldrich</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Oswald:wght@300&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <header>    
-        <!-- LOGO ko tangina mo -->
-       <nav class="navbar">
-           <a title="Aldrich Naag" href="https://www.facebook.com/aldrichnaag27"> <img src="images/newlogo.png"  width="70px;"  class="nav-branding"></a>
-               <!-- iba na to -->
-   
-           
-       </nav>
-   </header>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-    <h1>About Me</h1>
-    <div class="ProfilePic">
-    <img src="images/Justme.png" alt="Aldrich">
-    </div>
-    <div class="container">
-        <div class="row">
-            <h5> I am 24 year-old man who is passionate on arts.</h5>
-            <p> I enjoy making designs and art that fully portray my different styles and creativity, I love to explore and seek new things to improve.</p>
+<body class="bg-gradient-to-r from-amber-300 to-neutral-300">
+    <nav class="p-5 bg-stone-950 md:flex fixed w-full md:items-center md:justify-between backdrop-filter backdrop-blur bg-opacity-30 z-[1]">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Raleway]">
+            <img class="h-10 inline w-auto h-14"
+              src="images/newlogo.png">
+          </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block border rounded bg-white opacity-50">
+            <ion-icon name="reorder-two-outline" onclick="Menu(this)"></ion-icon>
+          </span>
         </div>
+    
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-stone-95 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-opacity-60">
+          <li class="mx-4 my-6 md:my-0">
+            
+          <li class="mx-4 my-6 md:my-0">
+            <a href="index.html" class="text-xl hover:text-black text-stone-50 duration-500 font-[Raleway]">HOME</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="PORTFOLIO.html" class="text-xl hover:text-black text-stone-50 duration-500 font-[Raleway]">PORTFOLIO</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="About_Aldrich.html" class="text-xl hover:text-black text-stone-50 duration-500 font-[Raleway]">ABOUT ALDRICH</a>
+          </li>
+    
+        </ul>
+      </nav>
+    
+      <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
+      </script>
+<p class="absolute left-10 top-12 text-7xl font-medium tracking-tight pt-14 pl-5 font-[Raleway]">
+    <a class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 text-slate-900 hover:text-slate-100 before:hover:bg-slate-800 ">
+        <span class="relative skew-y-3">ABOUT ME</span>
+    </a>
+</p>
+<!-- -->
+    <!--<div class="py-10 pt-10 pb-9 px-10 flex 80 w-auto z-[-1] hover:shadow-lg">
+    <img src="images/Justme.png" alt="Aldrich">
+    </div> -->
 
+    <div class='flex items-center min-h-screen left-12 pb-10 px-0 pl-16 h-auto w-96'>
+        <div
+                  class=" z-1 overflow-hidden  aspect-video bg-red-400 cursor-pointer rounded-xl relative group"
+              >
+                  <div
+                      class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-50 text-white flex items-end"
+                  >
+                      <div>
+                          <div
+                              class="transform-gpu  p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out"
+                          >
+                              <div class="font-bold">Aldrich Naag</div>
+      
+                              <div class="opacity-60 text-sm ">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                                  elit. Distinctio dolores error iure, perferendis
+                                  sequi totam. Ad aliquam aperiam atque deleniti dolor
+                                  dolorem enim esse et in, inventore itaque, pariatur
+                                  reprehenderit.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <img
+                      alt="Aldrich"
+                      class="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                      src="/images/B&W.jpg"
+                  />
+              </div>
+       </div>
 
-
-
-
+       
 
     <!--footer-->
     <section class="footer">
@@ -53,7 +107,7 @@
             <a href="PORTFOLIO.html">PORTFOLIO</a>
          </li>
          <li>
-            <a href="https://facebook.com/aldrichnaag27">WHO'S ALDRICH?</a>
+            <a href="About_Aldrich.html">ABOUT ALDRICH</a>
          </li>
         </ul>
         <p class="copyright">

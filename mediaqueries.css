@@ -80,7 +80,7 @@
   }
   .logo {
     font-size: 1.5rem;
-    width: auto;
+    width: 30px;
   }
   .nav-links {
     flex-direction: column;

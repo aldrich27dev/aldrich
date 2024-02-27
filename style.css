@@ -52,10 +52,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #FFD200;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #FFD200;
 }
 
 .logo {
@@ -198,6 +198,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #FFD200;
 }
 
 #socials-container {

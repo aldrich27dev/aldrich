@@ -440,6 +440,7 @@ article .icon {
 }
 #topBtn:hover {
   background-color: #FFD200;
+  transition: all 0.5 ease-in-out;
 }
 
 

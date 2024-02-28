@@ -314,6 +314,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  overflow: hidden;
 }
 
 /* EXPERIENCE SECTION */
@@ -436,7 +437,8 @@ article .icon {
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 50px;
+  font-weight: bold;
 }
 #topBtn:hover {
   background-color: #FFD200;

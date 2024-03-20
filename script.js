@@ -5,7 +5,7 @@ function toggleMenu() {
     icon.classList.toggle('open');
 }
 
-
+// goUPBotton //
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

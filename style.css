@@ -198,8 +198,9 @@ h3 {
   display: flex;
 }
 
+/*scrollBar*/
 .scroll-yellow {
-  height: 3px;
+  height: 2px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -214,6 +215,7 @@ h3 {
 @keyframes scroll-yellow {
   to { scale: 1 1; }
 }
+
 /* PROFILE SECTION */
 
 #profile {

@@ -198,6 +198,22 @@ h3 {
   display: flex;
 }
 
+.scroll-yellow {
+  height: 3px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #FFD200;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-yellow linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-yellow {
+  to { scale: 1 1; }
+}
 /* PROFILE SECTION */
 
 #profile {
@@ -287,6 +303,7 @@ h3 {
 
 .btn-color-1:hover {
   background: #FFD200;
+  transform: scale(1.05);
 }
 
 .btn-color-2 {
@@ -358,6 +375,9 @@ h3 {
   text-align: center;
 }
 
+.details-container:hover {
+  transform: scale(1.05);
+}
 .section-container {
   gap: 4rem;
   height: 80%;

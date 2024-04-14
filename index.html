@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/newlogo.png"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   </head>
   <body oncontextmenu="return false">
     <!--opensourcegradientBG-->
@@ -45,10 +46,10 @@
 <div class="scroll-yellow"></div>
     <!--profileSec-->
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container" data-aos="fade-up">
         <img src="./assets/yellowdp.png" alt="Aldrich profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text"  data-aos="fade-up">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Aldrich Naag</h1>
         <p class="section__text__p2">Frontend Developer</p>
@@ -81,7 +82,7 @@
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="section-container">
+      <div class="section-container" data-aos="fade-up">
         <div class="section__pic-container">
           <img
             src="./assets/Justme.png"
@@ -90,7 +91,7 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container" data-aos="fade-in">
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
@@ -98,7 +99,7 @@
               <h3>Experience</h3>
               <p>2+ years <br/>Frontend Development</p>
             </div>
-            <div class="details-container">
+            <div class="details-container" data-aos="fade-in">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -123,7 +124,7 @@
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="about-containers" data-aos="fade-up">
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
@@ -195,7 +196,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container" data-aos="fade-up">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
@@ -254,9 +255,9 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="about-containers" data-aos="fade-up">
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="article-container" data-aos="fade-up">
               <img
                 src="./assets/project-1.png"
                 alt="Project 1"
@@ -279,8 +280,8 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
+          <div class="details-container color-container" data-aos="fade-up">
+            <div class="article-container" data-aos="fade-up">
               <img
                 src="./assets/project-2.png"
                 alt="Project 2"
@@ -303,8 +304,8 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
+          <div class="details-container color-container" data-aos="fade-up">
+            <div class="article-container" data-aos="fade-up">
               <img
                 src="./assets/#"
                 alt="Project 3"
@@ -336,8 +337,8 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
+      <div class="contact-info-upper-container"  data-aos="fade-up">
+        <div class="contact-info-container" data-aos="fade-up">
           <img
             src="./assets/email.png"
             alt="Email icon"
@@ -345,7 +346,7 @@
           />
           <p><a href="mailto:aldrichhcirdla27@gmail.com">aldrichhcirdla27@gmail.com</a></p>
         </div>
-        <div class="contact-info-container">
+        <div class="contact-info-container" data-aos="fade-up">
           <img
             src="./assets/facebook.png"
             alt="Facebook icon"
@@ -371,5 +372,9 @@
 <button onclick="topFunction()" id="topBtn" title="Go to top">UP!</button>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

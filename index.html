@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aldrich Naag</title>
-    <link rel="icon" href="./assets/newlogo.png"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="icon" href="./assets/newlogo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body oncontextmenu="return false">
     <!--opensourcegradientBG-->
-       
+
     <canvas id="gradient-canvas" data-transition-in></canvas>
+
+    <!--cursorAnimation-->
+    <div class="animCursor"></div>
+    <div class="animCursor2"></div>
 
     <!--navBar-->
     <nav id="desktop-nav">
-      <img src="./assets/newlogo.png" class="logo" alt="Aldrich">
+      <img src="./assets/newlogo.png" class="logo" alt="Aldrich" />
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -28,7 +32,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <img src="./assets/newlogo.png" class="logo" alt="Aldrich">
+      <img src="./assets/newlogo.png" class="logo" alt="Aldrich" />
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -43,20 +47,21 @@
         </div>
       </div>
     </nav>
-<div class="scroll-yellow"></div>
+    <div class="scroll-yellow"></div>
     <!--profileSec-->
     <section id="profile">
       <div class="section__pic-container" data-aos="fade-right">
         <img src="./assets/yellowdp.png" alt="Aldrich profile picture" />
       </div>
-      <div class="section__text"  data-aos="fade-left">
+      <div class="section__text" data-aos="fade-left">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title"> Aldrich Naag </h1>
+        <h1 class="title">Aldrich Naag</h1>
         <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/AldrichResume.pdf')">
+            onclick="window.open('./assets/AldrichResume.pdf')"
+          >
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -68,26 +73,29 @@
             src="./assets/facebook.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://facebook.com/aldrichnaag27'"/>
+            onclick="location.href='https://facebook.com/aldrichnaag27'"
+          />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/aldrich27dev/'"/>
+            onclick="location.href='https://github.com/aldrich27dev/'"
+          />
         </div>
       </div>
     </section>
 
     <!--aboutSec-->
     <section id="about">
-      <p class="section__text__p1" data-aos="fade-up" >Get To Know More</p>
-      <h1 class="title" data-aos="fade-up" >About Me</h1>
+      <p class="section__text__p1" data-aos="fade-up">Get To Know More</p>
+      <h1 class="title" data-aos="fade-up">About Me</h1>
       <div class="section-container" data-aos="zoom-in-down">
         <div class="section__pic-container">
           <img
             src="./assets/Justme.png"
             alt="Profile picture"
-            class="about-pic"/>
+            class="about-pic"
+          />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
@@ -95,29 +103,31 @@
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
-                class="icon"/>
+                class="icon"
+              />
               <h3>Experience</h3>
-              <p>2+ years <br/>Frontend Development</p>
+              <p>2+ years <br />Frontend Development</p>
             </div>
             <div class="details-container" data-aos="fade-in">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
-                class="icon"/>
+                class="icon"
+              />
               <h3>Education</h3>
-              <p>Bachelor of Science in <br/>Information Technology</p>
+              <p>Bachelor of Science in <br />Information Technology</p>
             </div>
           </div>
           <div class="text-container" data-aos="fade-in">
             <p>
-              I am 23-year-old man who is passionate on arts, I enjoy making designs that
-              fully portray my different styles and creativity. I love to explore and seek
-              new things to improve myself. 
+              I am 23-year-old man who is passionate on arts, I enjoy making
+              designs that fully portray my different styles and creativity. I
+              love to explore and seek new things to improve myself.
             </p>
           </div>
         </div>
       </div>
-      
+
       <!--skillsSec-->
     </section>
     <section id="experience">
@@ -247,9 +257,8 @@
           </div>
         </div>
       </div>
-      
-<!--projectsSec-->
 
+      <!--projectsSec-->
     </section>
     <section id="projects">
       <p class="section__text__p1" data-aos="fade-in">Browse My Recent</p>
@@ -264,7 +273,9 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title">Cake Shop using React JS & Tailwind</h2>
+            <h2 class="experience-sub-title">
+              Cake Shop using React JS & Tailwind
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2"
@@ -312,7 +323,9 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title">Calculator - ReactJS & Tailwind</h2>
+            <h2 class="experience-sub-title">
+              Calculator - ReactJS & Tailwind
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2"
@@ -330,21 +343,24 @@
           </div>
         </div>
       </div>
-      
-<!--contactSec-->
 
+      <!--contactSec-->
     </section>
     <section id="contact">
       <p class="section__text__p1" data-aos="fade-up">Get in Touch</p>
       <h1 class="title" data-aos="fade-in">Contact Me</h1>
-      <div class="contact-info-upper-container"  data-aos="fade-up">
+      <div class="contact-info-upper-container" data-aos="fade-up">
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:aldrichhcirdla27@gmail.com">aldrichhcirdla27@gmail.com</a></p>
+          <p>
+            <a href="mailto:aldrichhcirdla27@gmail.com"
+              >aldrichhcirdla27@gmail.com</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -369,10 +385,10 @@
       </nav>
       <p>Copyright &#169; 2024 Aldrich Naag. All Rights Reserved.</p>
     </footer>
-<button onclick="topFunction()" id="topBtn" title="Go to top">UP!</button>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">UP!</button>
 
     <script src="script.js" async></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>

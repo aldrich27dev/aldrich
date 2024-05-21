@@ -100,4 +100,10 @@
   .text-container {
     text-align: justify;
   }
+  .animCursor {
+    display: none;
+  }
+  .animCursor2 {
+    display: none;
+  }
 }
